@@ -241,8 +241,11 @@ export const App = () => {
 							<option value='option1'>ID</option>
 						</Select>
 					</FormControl>
-					<Button colorScheme='teal' variant='solid' onClick={(e) => setCartOn(!cartOn)}>
+					<Button colorScheme='teal' variant='solid' onClick={(e) => setCartOn(!cartOn)} size='lg'>
 						Cart
+					</Button>
+					<Button colorScheme='red' variant='solid' onClick={(e) => window.location.reload()} size='lg'>
+						Reset
 					</Button>
 					<div className="cart-total">
 						<b>Cart total amount: </b>
